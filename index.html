@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+        <style type="text/css">
+        	img{
+               width: 400px;
+               height: auto;
+               display: block;      
+            }
+            /*鼠标放上去*/
+            img:hover{
+                -webkit-filter:none;
+            }
+            .img1{
+                margin: 0 auto;
+               /*滤镜属性
+                * grayscale:设置灰度，1是100%，0是0%
+                **/
+                -webkit-filter:grayscale(1); 
+                transition: all 3s;     
+            }
+            .img2{
+                /* 滤镜属性
+                 * brightness:亮度，默认值为1，正常亮度
+                 **/
+                 -webkit-filter:brightness(0);
+            }
+            .img3{
+                /* 褐色属性
+                 * sepia: 1为100%,0为正常
+                 **/
+                 -webkit-filter:sepia(1);
+            }
+            .img4{
+                /* 模糊度属性
+                 * blur:单位像素
+                 **/
+                 -webkit-filter:blur(50px);
+            }
+            .img5{
+                /* 对比度属性
+                 * contrast: 1为为正常,0为没有对比度，变为灰色。
+                 **/
+                 -webkit-filter:contrast(5);
+            }
+            .img6{
+                /* 饱和度属性
+                 * saturate: 1为为正常,0为灰度
+                 **/
+                 -webkit-filter:saturate(5);
+            }
+            .img7{
+                /* 胶片底色效果
+                 * invert:
+                 **/
+                 -webkit-filter:invert(1);
+            }
+            .img8{
+                /* 色相旋转
+                 * hue-rotate  参数为旋转角度
+                 **/
+                 -webkit-filter:hue-rotate(270deg);
+            }
+            .img9{
+                /* 过渡效果
+                 * 
+                 **/
+                 -webkit-filter:blur(10px) brightness(10) grayscale(1);
+                 transition: all 15s;
+            }
+            .img9:hover{
+                /* 过渡效果
+                 * 
+                 **/
+                 -webkit-filter:blur(0px) brightness(1) grayscale(1);             
+            }
+            
+        </style>
+	</head>
+	<body>
+		<img src="img/zyt.png" class="img1"/>
+        <img src="img/zyt.png" class="img2"/>
+        <img src="img/zyt.png" class="img3"/>
+        <img src="img/zyt.png" class="img4"/>
+        <img src="img/zyt.png" class="img5"/>
+        <img src="img/zyt.png" class="img6"/>
+        <img src="img/zyt.png" class="img7"/>
+        <img src="img/zyt.png" class="img8"/>
+        <img src="img/zyt.png" class="img9"/>
+	</body>
+</html>
